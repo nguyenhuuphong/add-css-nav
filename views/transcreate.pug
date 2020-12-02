@@ -1,0 +1,15 @@
+h1 Cho mượn sách theo tên
+hr
+
+form(action='/transaction/create' method="POST")
+  label(for='userId') Chọn 1 userId:
+  select(name='userId')
+    each user in users 
+      option(value=user.id)= user.name
+   
+  label(for='bookId') Chọn 1 BookId:
+  select(name='bookId')
+    each book in books
+      option(value=book.id)= book.title
+    
+  input(type='submit' value="tạo mới")

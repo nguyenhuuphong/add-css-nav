@@ -1,0 +1,68 @@
+{
+  "books": [
+    {
+      "title": "asdasd",
+      "des": "asdasda",
+      "id": "8VfmpI3M4"
+    },
+    {
+      "title": "sach van học",
+      "des": "ádasd",
+      "id": "YcGHF4uwC"
+    },
+    {
+      "title": "ádasda",
+      "des": "ádasdasd",
+      "id": "4SOu4VB6z"
+    },
+    {
+      "title": "ádasda",
+      "des": "ádasda",
+      "id": "A5clYCgjP"
+    }
+  ],
+  "users": [
+    {
+      "name": "Phong",
+      "age": "97"
+    },
+    {
+      "name": "Khoi",
+      "age": "97"
+    }
+  ],
+  "user": [
+    {
+      "name": "đoàn",
+      "age": "45",
+      "id": "kCclV4GaH"
+    },
+    {
+      "name": "phong",
+      "age": "56",
+      "id": "uIdx5Ji1q"
+    },
+    {
+      "name": "nâu",
+      "age": "15",
+      "id": "-yYdyMmbP"
+    }
+  ],
+  "trans": [
+    {
+      "userId": "uIdx5Ji1q",
+      "bookId": "YcGHF4uwC",
+      "id": "k-meYJQmQ"
+    },
+    {
+      "userId": "uIdx5Ji1q",
+      "bookId": "YcGHF4uwC",
+      "id": "3yeCq0Em1"
+    },
+    {
+      "userId": "kCclV4GaH",
+      "bookId": "A5clYCgjP",
+      "id": "l-Mq1dMCM"
+    }
+  ]
+}
