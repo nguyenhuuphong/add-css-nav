@@ -6,10 +6,18 @@ form(action='/transaction/create' method="POST")
   select(name='userId')
     each user in users 
       option(value=user.id)= user.name
-   
+  
   label(for='bookId') Chọn 1 BookId:
   select(name='bookId')
     each book in books
       option(value=book.id)= book.title
-    
+  br    
+  p tình trạng sách
+  input#male(type='radio' name='isComplete' checked='' value='false')
+  label(for='male') false
+  br
+  input#female(type='radio' name='isComplete' value='true')
+  label(for='female') true
+
+  br
   input(type='submit' value="tạo mới")
