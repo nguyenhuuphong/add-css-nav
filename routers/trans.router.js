@@ -11,30 +11,9 @@ router.get("/create", controller.create);
 
 router.post("/create", controller.createPost);
 
-router.get("/:id/complete", (req, res )=>{
-  var getId = req.params.id;
-  var getData = db
-         .get("trans")
-         .find({ id: getId })
-         .value();
+router.get("/:id/complete", controller.idComplete);
 
-    res.render("transupdate", {
-    trans: getData
- }); 
-});
-router.post("/:id/complete", (req ,res)=>{
-  var id = req.params.id;
-  var userId = req.body.userId;
-  var bookId  = req.body.bookId;
-  var isComplete= req.body.isComplete
-   
-   db.get('trans')
-  .find({ id: id })
-  .assign({ userId: userId, bookId: bookId,isComplete: isComplete })
-  .write()
-  
-  res.redirect("/transaction");
-})
+router.post("/:id/complete", controller.idCompletePost);
 
 module.exports = router;
 

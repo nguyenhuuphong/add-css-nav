@@ -80,5 +80,17 @@ module.exports.idComplete = function (req, res ){
 
     res.render("transupdate", {
     trans: getData
- }); 
-});
+ }) };
+module.exports.idCompletePost = function (req ,res){
+  var id = req.params.id;
+  var userId = req.body.userId;
+  var bookId  = req.body.bookId;
+  var isComplete= req.body.isComplete
+   
+   db.get('trans')
+  .find({ id: id })
+  .assign({ userId: userId, bookId: bookId,isComplete: isComplete })
+  .write()
+  
+  res.redirect("/transaction");
+};
